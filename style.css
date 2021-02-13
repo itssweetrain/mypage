@@ -13,6 +13,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.click-btn {
+  font-family: "Archivo Black", sans-serif;
+}
+
 .section-1 {
   background-image: url(img/background1-1.gif);
   background-size: cover;
