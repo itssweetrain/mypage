@@ -1,0 +1,357 @@
+:root {
+  --font-size: 50px;
+}
+
+body {
+  margin: 0;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.move-page {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-1 {
+  background-image: url(img/background1-1.gif);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 150vh;
+}
+
+.danbi-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.danbi-avatar:hover {
+  transform: scale(1.3);
+}
+.move-page {
+  display: flex;
+  justify-content: center;
+}
+
+.click-btn {
+  color: white;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: calc(var(--font-size) / 2);
+  margin: 40px;
+}
+
+.introduction {
+  font-size: var(--font-size);
+  color: white;
+  position: relative;
+  top: 20%;
+
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h4 {
+  margin: 20px;
+}
+
+h1 {
+  font-family: "Sarina", cursive;
+  color: white;
+  text-shadow: 2px 2px rgb(91, 86, 90, 0.4);
+}
+
+h4 {
+  font-size: 30px;
+  color: rgb(245, 210, 223);
+  text-shadow: 2px 2px rgb(91, 86, 90);
+}
+
+.clock {
+  position: relative;
+  top: 30%;
+}
+
+.clock-title {
+  text-align: center;
+  font-family: "Sarina", cursive;
+
+  color: rgb(254, 254, 254);
+  font-size: var(--font-size);
+  text-shadow: 2px 2px rgba(46, 44, 45, 0.4);
+}
+
+.section-2 {
+  margin: 0;
+  background-image: url(img/background2-2.gif);
+  background-size: cover;
+  background-position: -400px;
+
+  width: 100vw;
+  height: 150vh;
+}
+
+.introduction2 {
+  font-size: calc(var(--font-size) * 1.3);
+  color: white;
+  position: relative;
+  top: 50%;
+
+  display: flex;
+  flex-direction: column;
+
+  left: 20%;
+}
+
+.section-2 h1 {
+  font-size: calc(var(--font-size) * 2);
+  color: rgb(250, 225, 169, 0.9);
+  text-shadow: 3px 2px rgba(130, 28, 28, 0.4);
+}
+
+.section-2 h3 {
+  font-size: calc(var(--font-size) * 1.1);
+  text-shadow: 1px 1px rgb(140, 136, 139);
+}
+
+.section-3 {
+  margin: 0;
+  background-image: url(img/background3.JPG);
+  background-size: cover;
+
+  width: 100vw;
+  height: 150vh;
+}
+
+.section-3 h1 {
+  font-size: calc(var(--font-size) * 2);
+  color: rgb(250, 225, 169, 0.9);
+  text-shadow: 3px 2px rgba(130, 28, 28, 0.4);
+  margin: 0;
+  text-align: center;
+  height: 200px;
+  line-height: 300px;
+}
+
+.section-3 p {
+  text-align: center;
+  color: white;
+  font-size: calc(var(--font-size) * 0.8);
+}
+
+.section-3 h2 {
+  color: rgb(17, 17, 17);
+  text-shadow: 2px 1px rgba(208, 207, 207, 0.9);
+  font-size: calc(var(--font-size) * 1.1);
+}
+.section-3 h3 {
+  color: white;
+  /* text-shadow: 2px 1px rgba(21, 21, 21, 0.9); */
+  font-size: calc(var(--font-size) * 1);
+}
+
+.what-i-love {
+  margin-bottom: 20px;
+
+  text-align: center;
+  position: relative;
+}
+
+.what-i-love .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.what-i-love:hover .text {
+  opacity: 1;
+}
+.what-i-love:hover img {
+  filter: grayscale(60%);
+  transform: scale(1.2);
+}
+
+img {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 20px solid rgb(249, 243, 210);
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.second-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.section-4 {
+  margin: 0;
+  background-image: url(img/background5.JPG);
+  background-size: cover;
+
+  width: 100vw;
+  height: 150vh;
+}
+
+.section-4 h1 {
+  font-size: calc(var(--font-size) * 2);
+  color: rgb(250, 225, 169, 0.9);
+  text-shadow: 3px 2px rgba(130, 28, 28, 0.4);
+  margin: 0;
+  text-align: center;
+  height: 200px;
+  line-height: 300px;
+}
+
+.section-4 p {
+  text-align: center;
+  color: white;
+  font-size: calc(var(--font-size) * 0.8);
+}
+
+.balance-container {
+  color: white;
+  font-size: calc(var(--font-size) * 1.3);
+  text-shadow: 2px 2px rgba(45, 44, 44, 0.4);
+  font-weight: bold;
+}
+
+.balance-container:hover span {
+  display: none;
+}
+
+.balance-container span {
+  background-color: hsl(0, 20%, 96%, 0.4);
+  border-radius: 20px;
+  padding: 25px;
+}
+
+#num1 {
+  position: relative;
+  transform: translate(30%, 150%);
+}
+
+#num1:hover:before {
+  content: "홀에서는 부먹, 배달은 찍먹이 진리!";
+  color: rgb(152, 10, 111);
+}
+
+#num2 {
+  position: relative;
+  transform: translate(10%, 300%);
+}
+#num2:hover:before {
+  content: "유병장수는 좀 슬픈 것 같다, 요새는 굵고 짧게!";
+  color: rgb(152, 10, 111);
+}
+
+#num3 {
+  position: relative;
+  transform: translate(50%, 450%);
+}
+#num3:hover:before {
+  content: "이성적인 논리가, INTJ";
+  color: rgb(152, 10, 111);
+}
+
+#num4 {
+  position: relative;
+  transform: translate(30%, 500%);
+}
+#num4:hover:before {
+  content: "중동의 50도에서 살아보셨나요? 겨울!";
+  color: rgb(152, 10, 111);
+}
+
+#num5 {
+  position: relative;
+  transform: translate(10%, 600%);
+}
+#num5:hover:before {
+  content: "나의 아름다운 주민등록번호 앞자리,930303";
+  color: rgb(152, 10, 111);
+}
+
+#num6 {
+  position: relative;
+  transform: translate(30%, 650%);
+}
+#num6:hover:before {
+  content: "미라클 모닝, 아침!";
+  color: rgb(152, 10, 111);
+}
+
+#num7 {
+  position: relative;
+  transform: translate(60%, 800%);
+}
+#num7:hover:before {
+  content: "소주9 : 맥주1 꿀주파";
+  color: rgb(152, 10, 111);
+}
+
+.section-5 {
+  margin: 0;
+  background-image: url(img/background4.JPG);
+  background-size: cover;
+
+  width: 100vw;
+  height: 150vh;
+}
+
+.section-5 h1 {
+  font-size: calc(var(--font-size) * 2);
+  color: rgb(250, 225, 169, 0.9);
+  text-shadow: 3px 2px rgba(130, 28, 28, 0.4);
+  margin: 0;
+  text-align: center;
+  height: 200px;
+  line-height: 300px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  font-size: 180px;
+  color: white;
+}
+
+.fas,
+.fab {
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
